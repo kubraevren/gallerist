@@ -1,6 +1,5 @@
 package com.kubraevren.model;
 
-
 import java.util.Collection;
 import java.util.List;
 
@@ -16,39 +15,22 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "user")
+@Table(name = "userr", schema = "gallerist")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User extends BaseEntity implements UserDetails{
+public class User extends BaseEntity implements UserDetails {
 
     @Column(name = "username")
     private String username;
 
-    @Column(name="password")
+    @Column(name = "password")
     private String password;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-       return List.of();
+        return List.of();
     }
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

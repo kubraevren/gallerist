@@ -13,7 +13,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;
 
 @Entity
-@Table(name = "customer")
+@Table(name = "customer", schema = "gallerist")
 @Getter
 @Setter
 @NoArgsConstructor

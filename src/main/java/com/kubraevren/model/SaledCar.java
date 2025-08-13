@@ -13,7 +13,7 @@ import lombok.Setter;
 //Yani bu, bir satış ilişkisini tutan tablo gibi düşünebiliriz.
 
 @Entity
-@Table(name = "saled_car",
+@Table(name = "saled_car", schema = "gallerist",
 uniqueConstraints = {@UniqueConstraint(columnNames = {"gallerist_id","car_id", "customer_id"},
 name = "uq_gallerist_car_customer")} )
 @Getter

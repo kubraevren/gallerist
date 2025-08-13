@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "refresh_token")
+@Table(name = "refresh_token", schema = "gallerist")
 @Getter
 @Setter
 @NoArgsConstructor
